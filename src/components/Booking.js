@@ -19,7 +19,7 @@ const Booking = () => {
     if (Object.keys(bookingData).length === 5) {
       dispatch(book({ ...bookingData, id: bookSize + 1 }));
     } else {
-      alert("Please");
+      alert("Please fillup all fields!");
     }
   };
 
