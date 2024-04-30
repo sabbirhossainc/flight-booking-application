@@ -15,8 +15,9 @@ const myLogger = (store) => (next) => (action) => {
   // pass action
   if (upcomingState.bookingReducer.data.length < 4) {
     return next(action);
-  } else {
-    return null;
+  }
+  else {
+    alert("You cann't book more than three flight!!!");  
   }
 };
 
